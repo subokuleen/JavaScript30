@@ -147,7 +147,7 @@ function initDate() {
 function updateDate() {
 	secondDeg += (1 / 60) * 360;
 	minDeg += ((1 / 60) / 60) * 360;
-	hourDeg += (((1 / 60) / 60) / 12);
+	hourDeg += (((1 / 60) / 60) / 12) * 360;
 	
 	secHand.style.transform = `rotate(${ secondDeg}deg)`;
 	minHand.style.transform = `rotate(${ minDeg }deg)`;
